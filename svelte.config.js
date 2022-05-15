@@ -15,7 +15,7 @@ const config = {
 	],
 
 	kit: {
-		prerender: { default: true },
+		prerender: { default: true, entries: ['*', '/api/projects-ar.json', '/api/projects-en.json'], },
 		adapter: adapter(),
 		vite: {
 

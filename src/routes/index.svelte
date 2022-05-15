@@ -9,7 +9,9 @@
 	import { onMount } from 'svelte';
 
 	onMount(async () => {
-		projects = await (await fetch(`/api/projects-${localStorage.getItem('lang')}.json`)).json();
+		projects = await (
+			await fetch(`/api/projects-${localStorage.getItem('lang') || $locale}.json`)
+		).json();
 	});
 
 	let projects: any;
