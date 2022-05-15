@@ -1,0 +1,65 @@
+/* Write your global styles here, in PostCSS syntax */
+
+#project p a {
+	@apply underline;
+}
+
+.iconbtn {
+	@apply btn btn-square btn-ghost !text-base border-0;
+}
+
+/* Smooth Animation */
+body {
+	min-height: 600px;
+	overflow-y: scroll;
+}
+
+:root {
+	--ppp: #763af9;
+	/* Scroll Bar */
+}
+html {
+	scroll-behavior: smooth;
+}
+/* width */
+::-webkit-scrollbar {
+	width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: hsla(0, 0%, 100%, 0.5);
+}
+
+/* Selection */
+* {
+	-webkit-tap-highlight-color: rgba(var(--ppp), 0.2);
+	outline: none;
+	-ms-touch-action: manipulation;
+	touch-action: manipulation;
+}
+
+::-moz-selection {
+	color: #ffffff;
+	background: var(--ppp);
+}
+
+::selection {
+	color: #ffffff;
+	background: var(--ppp);
+}
+
+body [dir='rtl'] {
+	font-family: 'Tajawal', sans-serif;
+}
+body [dir='ltr'] {
+	font-family: 'Roboto', sans-serif;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

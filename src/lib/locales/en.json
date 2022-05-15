@@ -1,0 +1,59 @@
+{
+	"common": {
+		"homepage": {
+			"menu": {
+				"myname": "Andrew Nasef",
+				"homepage": "Homepage",
+				"projects": "Projects",
+				"contact": "Contact"
+			},
+			"hero": {
+				"hi": "Hi there, I'm Andrew 👋",
+				"job": "Mobile & Front-end developer",
+				"mission": "I help you reach your goals by designing & building apps & websites with best user-experince",
+				"dis": "First of all, I am a person who loves to constantly learn everything related to technology and also meet new people just like you. I am good and love making digital things. I am currently studying software engineering in Egypt",
+				"contactme": "Contact me",
+				"downloadcv": "Download my Resume"
+			},
+			"skills": {
+				"title": "My Capabilities",
+				"wordpress": "Making fast websites using wordpress in no time",
+				"flutter": "Making beautiful mutliplatform apps using flutter",
+				"web": "Making highly performant web apps using Vue, Svetle",
+				"figma": "Making beautiful user interfaces with best user experience for apps"
+			},
+			"more": {
+				"title": "More about me",
+				"achievements": "Achievements",
+				"achievementsdis": "My big events and achievements in my life.",
+				"carrer": "Carrer history",
+				"carrerdis": "Compaines & Communites that I proud to be part of.",
+				"morebtn": "Learn more in Linkedin"
+			}
+		},
+
+		"project": { "learnmore": "learn more" },
+		"projects": {
+			"title": "Projects",
+			"subtitle": "Here are projects I've worked on recently.",
+			"morebtn": "see more of my projects"
+		},
+		"cta": {
+			"head": "Let's Work Together",
+			"title": "Start a project",
+			"dis": "Interested in working together? We should queue up a chat.",
+			"btn": "let's do it"
+		}
+	},
+	"pages": {
+		"homepage": { "title": "Andrew Nasef | Freelance Front-end & Mobile developer" },
+		"projects": { "title": "My Latest Projects!", "dis": "" },
+		"hiring": {
+			"title": "Let's Work Together!",
+			"formtitle": "Let's Work Together!",
+			"dis": "",
+			"orderbtn": "Let's do it!",
+			"success": "Your message has been sent successfully. I will contact you as soon as possible."
+		}
+	}
+}
