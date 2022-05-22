@@ -3,13 +3,14 @@
 	import ArrowOutwardIcon from '~icons/ic/round-arrow-outward';
 
 	import { _ } from 'svelte-i18n';
+	import Links from '$lib/consts';
 
 	const cards = {
-		portfolio: 'https://andronasef.github.io/',
-		upwork: 'https://www.upwork.com/freelancers/~010a9911c39bb30d78',
-		fiverr: 'https://www.fiverr.com/users/andrewnasef/',
-		mostaql: 'https://mostaql.com/u/Imagination_Man',
-		khamsat: 'https://khamsat.com/user/iamazing'
+		portfolio: Links.siteurl,
+		upwork: Links.upwork,
+		fiverr: Links.fiverr,
+		mostaql: Links.mostaql,
+		khamsat: Links.khamsat
 	};
 </script>
 
@@ -24,7 +25,7 @@
 </div>
 
 <div class=" flex flex-col justify-center ">
-	<p class="text-2xl text-center my-10 ">Hire ME</p>
+	<p class="text-2xl text-center my-10 font-bold">Hire ME</p>
 	<div class="grid justify-center gap-5">
 		{#each Object.entries(cards) as [title, url]}
 			<div class="card lg:card-side bg-base-200 shadow-xl lg:max-w-4xl">

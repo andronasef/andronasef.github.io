@@ -23,7 +23,7 @@
 	initTrans();
 
 	onMount(() => {
-		$locale = localStorage.getItem('lang') || 'en';
+		$locale = localStorage.getItem('lang') || 'ar';
 		setTimeout(() => {
 			show = true;
 		}, 250);

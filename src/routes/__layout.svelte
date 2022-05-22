@@ -26,7 +26,7 @@
 	initTrans();
 
 	onMount(() => {
-		$locale = localStorage.getItem('lang');
+		$locale = localStorage.getItem('lang') || 'ar';
 		setTimeout(() => {
 			show = true;
 		}, 250);
