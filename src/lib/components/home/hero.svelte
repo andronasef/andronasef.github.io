@@ -15,7 +15,7 @@
 				{$_('homepage.hero.mission')}
 			</p>
 			<div
-				class="justify-items-stretch space-y-2 flex flex-col lg:space-x-2 lg:space-y-0 lg:flex-row lg:justify-start"
+				class="justify-items-stretch space-y-4 flex flex-col lg:space-x-2 lg:space-y-0 lg:flex-row lg:justify-start"
 			>
 				<a href={Links.contact}
 					><button class="btn btn-outline btn-wide md:btn-block"
@@ -23,7 +23,7 @@
 					></a
 				>
 				<a href={Links.resume}
-					><button class="btn  btn-primary btn-wide md:btn-block rtl:mr-2"
+					><button class="btn  btn-primary btn-wide md:btn-block lg:rtl:mr-2"
 						>{$_('homepage.hero.downloadcv')}</button
 					></a
 				>

@@ -8,7 +8,7 @@ const Links = {
     fiverr: 'https://www.fiverr.com/users/andrewnasef/',
     mostaql: 'https://mostaql.com/u/Imagination_Man',
     khamsat: 'https://khamsat.com/user/iamazing'
-    initial
+
 }
 
 
