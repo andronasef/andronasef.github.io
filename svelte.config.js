@@ -1,8 +1,11 @@
 import adapter from '@sveltejs/adapter-static';
 import preprocess from 'svelte-preprocess';
-import Icons from 'unplugin-icons/vite';
 import { mdsvex } from 'mdsvex';
 import mdsvexConfig from './mdsvex.config.js';
+import Icons from 'unplugin-icons/vite';
+// import AutoImport from 'unplugin-auto-import/vite'
+// import IconsResolver from 'unplugin-icons/resolver'
+
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -27,15 +30,40 @@ const config = {
 			},
 
 			plugins: [
+				// AutoImport({
+				// 	// targets to transform
+				// 	include: [
+				// 		/\.[tj]sx?$/,
+				// 		/\.svelte$/, /\.svelte\?svelte/,
+				// 		/\.md$/, // .md
+				// 	],
+
+				// 	// global imports to register
+				// 	imports: [
+				// 		// presets
+				// 		'svelte',
+				// 	],
+
+				// 	// eslintrc: {
+				// 	// 	enabled: true,
+				// 	// 	filepath: '.eslintrc-auto-import.json',
+				// 	// 	globalsPropValue: true
+				// 	// },
+
+				// 	resolvers: [IconsResolver({
+				// 		extension: "svelte"
+				// 	})
+				// 	],
+
+				// 	dts: './src/auto-imports.d.ts',
+				// }),
+
 				Icons({
 					compiler: 'svelte'
 				})
 			],
 		},
-		// Override http methods in the Todo forms
-		methodOverride: {
-			allowed: ['PATCH', 'DELETE']
-		}
+
 	}
 };
 

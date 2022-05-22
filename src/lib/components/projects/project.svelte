@@ -20,7 +20,7 @@
 				{description}
 			</p>
 			<div class="card-actions">
-				<button class="btn btn-outline border-2">{$_('common.project.learnmore')}</button>
+				<button class="btn btn-outline border-2">{$_('project.learnmore')}</button>
 			</div>
 		</div>
 	</div>

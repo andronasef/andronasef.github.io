@@ -15,6 +15,7 @@
 
 <script lang="ts">
 	import { initTrans } from '../lib/i18n';
+	import { getLocaleFromNavigator } from 'svelte-i18n';
 
 	import '../app.css';
 	import Header from '$lib/components/header.svelte';
@@ -26,7 +27,7 @@
 	initTrans();
 
 	onMount(() => {
-		$locale = localStorage.getItem('lang') || 'en';
+		$locale = localStorage.getItem('lang') || getLocaleFromNavigator();
 		setTimeout(() => {
 			show = true;
 		}, 250);

@@ -8,15 +8,15 @@
 
 	let menuLinks = [
 		{
-			title: 'common.homepage.menu.homepage',
+			title: 'homepage.menu.homepage',
 			url: '/'
 		},
 		{
-			title: 'common.homepage.menu.projects',
+			title: 'homepage.menu.projects',
 			url: '/' + 'projects'
 		},
 		{
-			title: 'common.homepage.menu.contact',
+			title: 'homepage.menu.contact',
 			url: Links.contact
 		}
 	];
@@ -45,18 +45,18 @@
 <nav class="navbar shadow-lg bg-neutral text-neutral-content rounded-box m-5">
 	<div class="flex-1 px-2 mx-2 flex">
 		<a href={menuLinks[0].url}>
-			<span class="text-lg font-bold"> {$_('common.homepage.menu.myname')} </span>
+			<span class="text-lg font-bold"> {$_('homepage.menu.myname')} </span>
 		</a>
 	</div>
 
 	<!-- Mobile Menu -->
 	<div class="flex-none flex lg:hidden">
-		<a href={menuLinks[0].url}>
+		<a href={menuLinks[1].url}>
 			<button class="iconbtn">
 				<WorksIcon />
 			</button>
 		</a>
-		<a href="https://znap.link/andronasef">
+		<a target="" href={Links.contact}>
 			<button class="iconbtn">
 				<ContactIcon />
 			</button>

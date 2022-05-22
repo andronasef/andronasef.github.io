@@ -13,9 +13,9 @@
 </script>
 
 <section class="flex flex-col items-center" id="projects">
-	<div class="font-bold mb-2 text-3xl">{$_('common.projects.title')}</div>
+	<div class="font-bold mb-2 text-3xl">{$_('projects.title')}</div>
 	<div class="font-semibold text-small mb-7 opacity-90 text-center">
-		{$_('common.projects.subtitle')}
+		{$_('projects.subtitle')}
 	</div>
 	<div class="mb-10 grid gap-7 grid-cols-1 lg:grid-cols-2">
 		{#each slicedprojects as project}
@@ -37,7 +37,7 @@
 			<button
 				class="flex btn btn-primary hover:(bg-primary-focus) border-0 justify-center items-center"
 			>
-				{$_('common.projects.morebtn')}
+				{$_('projects.morebtn')}
 			</button>
 		</a>
 	{/if}

@@ -7,32 +7,32 @@
 </script>
 
 <section class="flex flex-col items-center">
-	<div class="font-bold mb-5 text-3xl">{$_('common.homepage.skills.title')}</div>
+	<div class="font-bold mb-5 text-3xl">{$_('homepage.skills.title')}</div>
 	<div class="w-full grid gap-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
 		<div class="container">
 			<Wordpress class="mb-2 text-4xl" />
 			<h2 class="font-bold text-xl">WordPress</h2>
-			<p>{$_('common.homepage.skills.wordpress')}</p>
+			<p>{$_('homepage.skills.wordpress')}</p>
 		</div>
 		<div class="container">
 			<Flutter class="mb-2 text-4xl" />
 			<h2 class="font-bold text-xl">Flutter</h2>
 			<p>
-				{$_('common.homepage.skills.flutter')}
+				{$_('homepage.skills.flutter')}
 			</p>
 		</div>
 		<div class="container">
 			<Figma class="mb-2 text-4xl" />
 			<h2 class="font-bold text-xl">Figma</h2>
 			<p>
-				{$_('common.homepage.skills.figma')}
+				{$_('homepage.skills.figma')}
 			</p>
 		</div>
 		<div class="container">
 			<Web class="mb-2 text-4xl" />
 			<h2 class="font-bold text-xl">Web</h2>
 			<p>
-				{$_('common.homepage.skills.web')}
+				{$_('homepage.skills.web')}
 			</p>
 		</div>
 	</div>

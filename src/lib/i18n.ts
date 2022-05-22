@@ -11,7 +11,7 @@ export function initTrans() {
 
     init({
         fallbackLocale: 'en',
-        initialLocale: "en"
+        initialLocale: "ar"
     })
 
 }
