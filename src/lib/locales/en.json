@@ -61,10 +61,10 @@
 			"dis": "",
 			"hirecards": {
 				"portfolio": { "title": "My portfolio", "text": "Learn more about me and my works." },
-				"upwork": { "title": "Upwork", "text": "Site for hiring best freelancers from worldwid" },
+				"upwork": { "title": "Upwork", "text": "Site for hiring best freelancers from worldwide" },
 				"fiverr": { "title": "Fiverr", "text": "Worldwide micro-services (Gigs) website" },
 				"mostaql": { "title": "Mostaql", "text": "Arabic site for hiring best arab freelancers" },
-				"khamsat": { "title": "Fiverr", "text": "Arabic site for micro-services (Gig)" }
+				"khamsat": { "title": "Khamsat", "text": "Arabic site for micro-services (Gig)" }
 			}
 		}
 	}
