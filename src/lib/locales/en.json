@@ -19,10 +19,14 @@
 		},
 		"skills": {
 			"title": "My Capabilities",
-			"wordpress": "Making fast websites using wordpress in no time",
-			"flutter": "Making beautiful mutliplatform apps using flutter",
-			"web": "Making highly performant web apps using Vue, Svetle",
-			"figma": "Making beautiful user interfaces with best user experience for apps"
+			"wordpress": "Wordpress Design",
+			"wordpressDis": "Making fast websites using wordpress in no time",
+			"flutter": "App Development",
+			"flutterDis": "Making beautiful mobile apps using Flutter",
+			"figma": "UI Design",
+			"figmaDis": "Making beautiful user interfaces with best user experience for apps",
+			"webDis": "Making highly performant web apps using Vue, Svetle",
+			"web": "Web Development"
 		},
 		"more": {
 			"title": "More about me",
@@ -33,8 +37,9 @@
 			"morebtn": "Learn more in Linkedin"
 		}
 	},
-
-	"project": { "learnmore": "learn more" },
+	"project": {
+		"learnmore": "learn more"
+	},
 	"projects": {
 		"title": "Projects",
 		"subtitle": "Here are projects I've worked on recently.",
@@ -47,8 +52,13 @@
 		"btn": "let's do it"
 	},
 	"pages": {
-		"homepage": { "title": "Andrew Nasef | Freelance Front-end & Mobile developer" },
-		"projects": { "title": "My Latest Projects!", "dis": "" },
+		"homepage": {
+			"title": "Andrew Nasef | Freelance Front-end & Mobile developer"
+		},
+		"projects": {
+			"title": "My Latest Projects!",
+			"dis": ""
+		},
 		"hiring": {
 			"title": "Let's Work Together!",
 			"dis": "",
@@ -59,12 +69,28 @@
 		"contact": {
 			"title": "Contact me!",
 			"dis": "",
+			"hireme": "Hire Me!",
 			"hirecards": {
-				"portfolio": { "title": "My portfolio", "text": "Learn more about me and my works." },
-				"upwork": { "title": "Upwork", "text": "Site for hiring best freelancers from worldwide" },
-				"fiverr": { "title": "Fiverr", "text": "Worldwide micro-services (Gigs) website" },
-				"mostaql": { "title": "Mostaql", "text": "Arabic site for hiring best arab freelancers" },
-				"khamsat": { "title": "Khamsat", "text": "Arabic site for micro-services (Gig)" }
+				"portfolio": {
+					"title": "My portfolio",
+					"text": "Learn more about me and my works."
+				},
+				"upwork": {
+					"title": "Upwork",
+					"text": "Site for hiring best freelancers from worldwide"
+				},
+				"fiverr": {
+					"title": "Fiverr",
+					"text": "Worldwide micro-services (Gigs) website"
+				},
+				"mostaql": {
+					"title": "Mostaql",
+					"text": "Arabic site for hiring best arab freelancers"
+				},
+				"khamsat": {
+					"title": "Khamsat",
+					"text": "Arabic site for micro-services (Gig)"
+				}
 			}
 		}
 	}

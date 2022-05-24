@@ -1,6 +1,7 @@
 <script lang="ts">
 	import SocialLinks from '$lib/components/social_links.svelte';
 	import ArrowOutwardIcon from '~icons/ic/round-arrow-outward';
+	import { MetaTags } from 'svelte-meta-tags';
 
 	import { _ } from 'svelte-i18n';
 	import Links from '$lib/consts';
@@ -14,6 +15,18 @@
 	};
 </script>
 
+<MetaTags
+	title={$_('pages.contact.title')}
+	description={$_('pages.contact.dis')}
+	openGraph={{
+		title: $_('pages.contact.title'),
+		site_name: $_('pages.homepage.title'),
+		description: $_('pages.contact.title'),
+		type: 'website',
+		images: [{ url: 'https://www.andronasef.ninja/img/cover.webp' }]
+	}}
+/>
+
 <div class="flex flex-col items-center gap-3">
 	<div class="aspect-square w-40 h-40 border-4 border-white relative overflow-hidden rounded-full">
 		<img class=" rounded-full mt-3" src="/img/me-min.webp" alt="me" />
@@ -25,7 +38,9 @@
 </div>
 
 <div class=" flex flex-col justify-center ">
-	<p class="text-2xl text-center my-10 font-bold">Hire ME</p>
+	<p class="text-2xl text-center mt-12 mb-5 font-bold">
+		{$_('pages.contact.hireme')}
+	</p>
 	<div class="grid justify-center gap-5">
 		{#each Object.entries(cards) as [title, url]}
 			<div class="card lg:card-side bg-base-200 shadow-xl lg:max-w-4xl">
