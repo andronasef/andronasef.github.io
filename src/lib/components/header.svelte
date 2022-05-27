@@ -56,7 +56,7 @@
 	<div class="flex-1 px-2 mx-2 flex">
 		<a class="" href={menuLinks[0].url}>
 			<span class="text-lg font-bold hidden lg:flex"> {$_('homepage.menu.myname')} </span>
-			<span class="text-lg font-bold lg:hidden">AN </span>
+			<img src="/logo.svg" class="h-12 text-lg font-bold lg:hidden" alt="logo" />
 		</a>
 	</div>
 
