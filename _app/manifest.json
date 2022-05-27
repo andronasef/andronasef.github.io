@@ -1,6 +1,6 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "start-426c7f3c.js",
+    "file": "start-a76aea11.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -10,8 +10,7 @@
     "dynamicImports": [
       "src/routes/__layout.svelte",
       ".svelte-kit/runtime/components/error.svelte",
-      "src/routes/__layout-contact.svelte",
-      "src/routes/contact@contact.svelte",
+      "src/routes/contact.svelte",
       "src/routes/index.svelte",
       "src/routes/project.svelte",
       "src/routes/projects/ar/egnews.md",
@@ -24,18 +23,20 @@
     ]
   },
   "src/routes/__layout.svelte": {
-    "file": "pages/__layout.svelte-580bcc68.js",
+    "file": "pages/__layout.svelte-de712815.js",
     "src": "src/routes/__layout.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-2307ddf3.js",
       "_runtime.esm-24a2f473.js",
-      "_app-b3c91a75.js",
       "_consts-f99fd407.js",
       "_social_links-f41ea5de.js",
       "_index-4360fd7d.js",
       "_index-c822a4b0.js"
+    ],
+    "css": [
+      "assets/pages/__layout.svelte-8f12480b.css"
     ]
   },
   ".svelte-kit/runtime/components/error.svelte": {
@@ -47,22 +48,9 @@
       "_index-2307ddf3.js"
     ]
   },
-  "src/routes/__layout-contact.svelte": {
-    "file": "pages/__layout-contact.svelte-b89281e7.js",
-    "src": "src/routes/__layout-contact.svelte",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_index-2307ddf3.js",
-      "_runtime.esm-24a2f473.js",
-      "_app-b3c91a75.js",
-      "_index-4360fd7d.js",
-      "_index-c822a4b0.js"
-    ]
-  },
-  "src/routes/contact@contact.svelte": {
-    "file": "pages/contact@contact.svelte-056f9914.js",
-    "src": "src/routes/contact@contact.svelte",
+  "src/routes/contact.svelte": {
+    "file": "pages/contact.svelte-31b9fc0b.js",
+    "src": "src/routes/contact.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
@@ -215,15 +203,6 @@
     "file": "chunks/runtime.esm-24a2f473.js",
     "imports": [
       "_index-c822a4b0.js"
-    ]
-  },
-  "_app-b3c91a75.js": {
-    "file": "chunks/app-b3c91a75.js",
-    "imports": [
-      "_runtime.esm-24a2f473.js"
-    ],
-    "css": [
-      "assets/app-389868dd.css"
     ]
   },
   "_social_links-f41ea5de.js": {
