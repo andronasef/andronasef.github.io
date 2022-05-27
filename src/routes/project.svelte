@@ -43,7 +43,8 @@
 				method="post"
 				target="form"
 				transition:slide
-				class="lg:grid lg:grid-cols-2  lg:gap-4 "
+				id="work-form"
+				class="lg:grid lg:grid-cols-2  lg:gap-4"
 			>
 				<iframe class="visibility: hidden" title="form" name="form" frameborder="0" />
 
@@ -60,10 +61,16 @@
 								class="!input !input-bordered "
 								type="text"
 								name={'entry.' + filed.id}
+								id={filed.label}
 								required
 							/>
 						{:else}
-							<textarea class="textarea textarea-bordered" rows="4" name={'entry.' + filed.id} />
+							<textarea
+								class="textarea textarea-bordered"
+								id={filed.label}
+								rows="4"
+								name={'entry.' + filed.id}
+							/>
 						{/if}
 					</div>
 				{/each}
