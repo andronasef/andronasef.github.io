@@ -40,9 +40,11 @@
 	<!-- content here -->
 
 	<div dir={$locale == 'en' ? 'ltr' : 'rtl'}>
-		<Header />
+		<Header slug={refresh} />
 		<main class="flex-grow flex flex-col justify-start items-center">
-			<SocialLinks floating={true} />
+			{#if refresh != '/contact'}
+				<SocialLinks floating={true} />
+			{/if}
 
 			{#key refresh}
 				<div

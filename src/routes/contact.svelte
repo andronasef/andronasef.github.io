@@ -47,7 +47,7 @@
 				<img src={`/img/contact/${title}.webp`} class="lg:w-2/5 lg:object-cover" alt={title} />
 				<div class="card-body lg:flex lg:flex-row lg:items-center">
 					<div>
-						<h2 class="card-title text-4xl">
+						<h2 class="card-title text-3xl lg:text-4xl">
 							{$_(`pages.contact.hirecards.${title}.title`)}
 						</h2>
 						<p>{$_(`pages.contact.hirecards.${title}.text`)}</p>

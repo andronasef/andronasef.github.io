@@ -1,10 +1,18 @@
-<script>
+<script lang="ts">
 	import WorksIcon from '~icons/ph/bag-simple-fill';
 	import ContactIcon from '~icons/mdi/email-edit';
 	import EnIcon from '~icons/twemoji/flag-for-flag-egypt';
 	import ArIcon from '~icons/twemoji/flag-for-flag-united-kingdom';
 	import Links from '$lib/consts';
 	import { _, locale } from 'svelte-i18n';
+	import { onMount } from 'svelte';
+
+	export let slug: string;
+	// function slug() {
+	// 	let splitHref = window.location.href.split('/');
+	// 	slug('/' + splitHref[splitHref.length - 1]).toString();
+	// }
+	console.log(slug);
 
 	let menuLinks = [
 		{
@@ -13,11 +21,13 @@
 		},
 		{
 			title: 'homepage.menu.projects',
-			url: '/' + 'projects'
+			url: '/projects',
+			icon: WorksIcon
 		},
 		{
 			title: 'homepage.menu.contact',
-			url: Links.contact
+			url: Links.contact,
+			icon: ContactIcon
 		}
 	];
 
@@ -45,34 +55,35 @@
 <nav class="navbar shadow-lg bg-neutral text-neutral-content rounded-box m-5">
 	<div class="flex-1 px-2 mx-2 flex">
 		<a class="" href={menuLinks[0].url}>
-			<span class="text-lg font-bold whitespace-nowrap"> {$_('homepage.menu.myname')} </span>
+			<span class="text-lg font-bold hidden lg:flex"> {$_('homepage.menu.myname')} </span>
+			<span class="text-lg font-bold lg:hidden">AN </span>
 		</a>
 	</div>
 
-	<!-- Mobile Menu -->
-	<div class="flex-none flex lg:hidden">
-		<a href={menuLinks[1].url}>
-			<button class="iconbtn">
-				<WorksIcon />
-			</button>
-		</a>
-		<a target="" href={Links.contact}>
-			<button class="iconbtn">
-				<ContactIcon />
-			</button>
-		</a>
-	</div>
-
-	<!-- Desktop Menu -->
-	<div class="flex-none px-2 mx-2 hidden lg:flex">
-		<div class="items-stretch">
+	<div class="flex-none flex lg:px-2 lg:mx-2">
+		<div class="flex items-center lg:items-stretch">
 			{#each Object.values(menuLinks) as item}
-				<a href={item.url} class="btn btn-ghost btn-sm rounded-btn font-medium">
-					{$_(item.title)}
+				<!-- Desktop Item  -->
+				<a
+					href={item.url}
+					class="{slug == item.url
+						? 'btn-active'
+						: ''} hidden lg:inline-flex btn btn-ghost btn-sm rounded-btn font-medium"
+				>
+					<span class="hidden lg:block">{$_(item.title)}</span>
 				</a>
+				<!-- Mobile Item  -->
+				{#if item.url != '/'}
+					<a class="flex lg:hidden" href={item.url}>
+						<button class=" {slug == item.url ? 'btn-active' : ''} iconbtn">
+							<svelte:component this={item.icon} />
+						</button>
+					</a>
+				{/if}
 			{/each}
 		</div>
 	</div>
+
 	<!-- Language Changer -->
 	<button class="rtl:lg:-mr-4 ltr:lg:-ml-4 iconbtn" on:click={toggleLang}>
 		<ArIcon class="ltr:hidden" />
