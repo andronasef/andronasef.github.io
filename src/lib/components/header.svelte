@@ -35,12 +35,10 @@
 
 		// reload to translate and exception for project (lang in url)
 		let h = window.location.href;
-		if (h.includes('/ar/') || h.includes('/en/')) {
-			if (h.includes('/en/')) {
-				window.location.href = h.replaceAll('/en/', '/ar/');
-			} else if (h.includes('/ar/')) {
-				window.location.href = h.replaceAll('/ar/', '/en/');
-			}
+		if (h.includes('/en/')) {
+			window.location.href = h.replaceAll('/en/', '/ar/');
+		} else if (h.includes('/ar/')) {
+			window.location.href = h.replaceAll('/ar/', '/en/');
 		} else {
 			location.reload();
 		}
