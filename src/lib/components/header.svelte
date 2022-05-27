@@ -44,8 +44,8 @@
 
 <nav class="navbar shadow-lg bg-neutral text-neutral-content rounded-box m-5">
 	<div class="flex-1 px-2 mx-2 flex">
-		<a href={menuLinks[0].url}>
-			<span class="text-lg font-bold"> {$_('homepage.menu.myname')} </span>
+		<a class="" href={menuLinks[0].url}>
+			<span class="text-lg font-bold whitespace-nowrap"> {$_('homepage.menu.myname')} </span>
 		</a>
 	</div>
 
