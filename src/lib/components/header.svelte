@@ -8,11 +8,6 @@
 	import { onMount } from 'svelte';
 
 	export let slug: string;
-	// function slug() {
-	// 	let splitHref = window.location.href.split('/');
-	// 	slug('/' + splitHref[splitHref.length - 1]).toString();
-	// }
-	console.log(slug);
 
 	let menuLinks = [
 		{
@@ -40,7 +35,7 @@
 
 		// reload to translate and exception for project (lang in url)
 		let h = window.location.href;
-		if (h.includes('/ar/' || h.includes('/en/'))) {
+		if (h.includes('/ar/') || h.includes('/en/')) {
 			if (h.includes('/en/')) {
 				window.location.href = h.replaceAll('/en/', '/ar/');
 			} else if (h.includes('/ar/')) {
