@@ -16,9 +16,30 @@
 		<meta name="description" content="Andrew Nasef Personal Website" />
 		<link rel="icon" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<script type="text/javascript">
+			(function () {
+				window.__insp = window.__insp || [];
+				__insp.push(['wid', 2013516455]);
+				var ldinsp = function () {
+					if (typeof window.__inspld != 'undefined') return;
+					window.__inspld = 1;
+					var insp = document.createElement('script');
+					insp.type = 'text/javascript';
+					insp.async = true;
+					insp.id = 'inspsync';
+					insp.src =
+						('https:' == document.location.protocol ? 'https' : 'http') +
+						'://cdn.inspectlet.com/inspectlet.js?wid=2013516455&r=' +
+						Math.floor(new Date().getTime() / 3600000);
+					var x = document.getElementsByTagName('script')[0];
+					x.parentNode.insertBefore(insp, x);
+				};
+				setTimeout(ldinsp, 0);
+			})();
+		</script>
 		<meta http-equiv="content-security-policy" content="">
 	<link rel="stylesheet" href="/_app/assets/app-37ee513a.css">
-	<link rel="modulepreload" href="/_app/start-6851a630.js">
+	<link rel="modulepreload" href="/_app/start-1673c517.js">
 	<link rel="modulepreload" href="/_app/chunks/index-2307ddf3.js">
 	<link rel="modulepreload" href="/_app/chunks/index-c822a4b0.js">
 	<link rel="modulepreload" href="/_app/pages/__layout.svelte-2ec10ff1.js">
@@ -41,7 +62,7 @@
 
 
 		<script type="module" data-hydrate="2eq20f">
-		import { start } from "/_app/start-6851a630.js";
+		import { start } from "/_app/start-1673c517.js";
 		start({
 			target: document.querySelector('[data-hydrate="2eq20f"]').parentNode,
 			paths: {"base":"","assets":""},
