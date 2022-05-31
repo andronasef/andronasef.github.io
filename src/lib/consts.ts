@@ -7,8 +7,8 @@ const Links = {
     // Contact Page
     upwork: 'https://www.upwork.com/freelancers/~010a9911c39bb30d78',
     fiverr: 'https://www.fiverr.com/users/andrewnasef/',
-    mostaql: 'https://mostaql.com/u/Imagination_Man',
-    khamsat: 'https://khamsat.com/user/iamazing'
+    mostaql: 'https://mostaql.com/u/andronasef',
+    khamsat: 'https://khamsat.com/user/andronasef'
 
 }
 
