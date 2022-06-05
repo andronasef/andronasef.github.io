@@ -1,5 +1,5 @@
 <script>
-	import Links from '$lib/consts';
+	import R from '$lib/consts';
 	import { _ } from 'svelte-i18n';
 </script>
 
@@ -17,12 +17,12 @@
 			<div
 				class="justify-items-stretch space-y-4 flex flex-col lg:space-x-2 lg:space-y-0 lg:flex-row lg:justify-start"
 			>
-				<a href={Links.contact}
+				<a href={R.Links.contact}
 					><button class="btn btn-outline btn-wide md:btn-block"
 						>{$_('homepage.hero.contactme')}</button
 					></a
 				>
-				<a href={Links.resume}
+				<a href={R.Links.resume}
 					><button class="btn  btn-primary btn-wide md:btn-block lg:rtl:mr-2"
 						>{$_('homepage.hero.downloadcv')}</button
 					></a

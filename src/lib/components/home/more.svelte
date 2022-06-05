@@ -2,7 +2,7 @@
 	import Carrer from '~icons/ic/baseline-work';
 	import Achievements from '~icons/healthicons/award-trophy';
 	import { _ } from 'svelte-i18n';
-	import Links from '$lib/consts';
+	import R from '$lib/consts';
 </script>
 
 <section class="flex flex-col items-center">
@@ -12,7 +12,7 @@
 			<Carrer class="mb-2 text-6xl" />
 			<h2 class="font-bold text-2xl">{$_('homepage.more.carrer')}</h2>
 			<p>{$_('homepage.more.carrerdis')}</p>
-			<a href={Links.carrerHistory} target="_blank">
+			<a href={R.Links.carrerHistory} target="_blank">
 				<button class="btn btn-outline border-2">{$_('homepage.more.morebtn')}</button>
 			</a>
 		</div>
@@ -22,7 +22,7 @@
 			<p>
 				{$_('homepage.more.achievementsdis')}
 			</p>
-			<a href={Links.achievements} target="_blank">
+			<a href={R.Links.achievements} target="_blank">
 				<button class="btn btn-outline border-2">{$_('homepage.more.morebtn')}</button>
 			</a>
 		</div>

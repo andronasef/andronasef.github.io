@@ -4,14 +4,14 @@
 	import { MetaTags } from 'svelte-meta-tags';
 
 	import { _ } from 'svelte-i18n';
-	import Links from '$lib/consts';
+	import R from '$lib/consts';
 
 	const cards = {
-		portfolio: Links.siteurl,
-		upwork: Links.upwork,
-		fiverr: Links.fiverr,
-		mostaql: Links.mostaql,
-		khamsat: Links.khamsat
+		portfolio: R.Links.siteurl,
+		upwork: R.Links.upwork,
+		fiverr: R.Links.fiverr,
+		mostaql: R.Links.mostaql,
+		khamsat: R.Links.khamsat
 	};
 </script>
 
@@ -23,7 +23,7 @@
 		site_name: $_('pages.homepage.title'),
 		description: $_('pages.contact.title'),
 		type: 'website',
-		images: [{ url: 'https://www.andronasef.ninja/img/cover.webp' }]
+		images: [{ url: R.Img.websitecover }]
 	}}
 />
 

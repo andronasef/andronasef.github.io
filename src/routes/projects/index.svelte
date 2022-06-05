@@ -4,6 +4,7 @@
 	import ProjectsPreview from '$lib/components/projects/projects_preview.svelte';
 	import { locale } from 'svelte-i18n';
 	import { onMount } from 'svelte';
+	import R from '$lib/consts';
 
 	onMount(async () => {
 		projects = await (
@@ -14,11 +15,19 @@
 	let projects: any;
 </script>
 
-<MetaTags title={$_('pages.projects.title')} description={$_('pages.projects.dis')} />
+<MetaTags
+	title={$_('pages.projects.title')}
+	description={$_('pages.projects.dis')}
+	openGraph={{
+		title: $_('pages.projects.title'),
+		description: $_('pages.projects.title'),
+		site_name: $_('pages.homepage.title'),
+		type: 'website',
+		images: [{ url: R.Img.websitecover }]
+	}}
+/>
 
 {#await projects then projects}
-	<!-- {projects} -->
-	<!-- promise was fulfilled -->
 	{#if projects}
 		<ProjectsPreview {projects} />
 	{/if}

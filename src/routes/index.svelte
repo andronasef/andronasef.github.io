@@ -7,6 +7,7 @@
 	import ProjectsPreview from '$lib/components/projects/projects_preview.svelte';
 	import More from '$lib/components/home/more.svelte';
 	import { onMount } from 'svelte';
+	import R from '$lib/consts';
 
 	onMount(async () => {
 		projects = await (
@@ -25,7 +26,7 @@
 		site_name: $_('pages.homepage.title'),
 		description: $_('pages.homepage.title'),
 		type: 'website',
-		images: [{ url: 'https://www.andronasef.ninja/img/cover.webp' }]
+		images: [{ url: R.Img.websitecover }]
 	}}
 />
 

@@ -16,6 +16,7 @@
 	import { locale, _ } from 'svelte-i18n';
 	import { slide } from 'svelte/transition';
 	import { MetaTags } from 'svelte-meta-tags';
+	import R from '$lib/consts';
 
 	export let fields: any;
 	let completed = false;
@@ -28,8 +29,10 @@
 	description={$_('pages.hiring.dis')}
 	openGraph={{
 		title: $_('pages.hiring.title'),
-		site_name: $_('pages.hiring.title'),
-		description: $_('pages.hiring.title')
+		site_name: $_('pages.homepage.title'),
+		description: $_('pages.hiring.title'),
+		type: 'website',
+		images: [{ url: R.Img.websitecover }]
 	}}
 />
 

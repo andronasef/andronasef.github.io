@@ -3,7 +3,7 @@
 	import ContactIcon from '~icons/mdi/email-edit';
 	import EnIcon from '~icons/twemoji/flag-for-flag-egypt';
 	import ArIcon from '~icons/twemoji/flag-for-flag-united-kingdom';
-	import Links from '$lib/consts';
+	import R from '$lib/consts';
 	import { _, locale } from 'svelte-i18n';
 	import { onMount } from 'svelte';
 
@@ -21,7 +21,7 @@
 		},
 		{
 			title: 'homepage.menu.contact',
-			url: Links.contact,
+			url: R.Links.contact,
 			icon: ContactIcon
 		}
 	];
