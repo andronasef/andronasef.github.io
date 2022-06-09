@@ -4,10 +4,10 @@
 	import { MetaTags } from 'svelte-meta-tags';
 
 	import { _ } from 'svelte-i18n';
-	import R from '$lib/consts';
+	import R, { siteurl } from '$lib/consts';
 
 	const cards = {
-		portfolio: R.Links.siteurl,
+		portfolio: siteurl,
 		upwork: R.Links.upwork,
 		fiverr: R.Links.fiverr,
 		mostaql: R.Links.mostaql,
@@ -45,9 +45,7 @@
 	</p>
 	<div class="grid justify-center gap-5">
 		{#each Object.entries(cards) as [title, url]}
-			<div
-				class="card lg:card-side bg-base-200 shadow-xl lg:max-w-4xl lg:hover:scale-10 transition lg:active:scale-95"
-			>
+			<div class="group card lg:card-side bg-base-200 shadow-xl lg:max-w-4xl transition ">
 				<img src={`/img/contact/${title}.webp`} class="lg:w-2/5 lg:object-cover" alt={title} />
 				<div class="card-body lg:flex lg:flex-row lg:items-center">
 					<div>
@@ -57,7 +55,11 @@
 						<p>{$_(`pages.contact.hirecards.${title}.text`)}</p>
 					</div>
 					<div class="card-actions flex-grow lg:justify-end ">
-						<a href={url} target="_blank" class="w-full lg:w-auto">
+						<a
+							href={url}
+							target="_blank"
+							class="w-full lg:w-auto lg:hover:scale-110 transition lg:active:scale-90"
+						>
 							<button class="btn btn-primary btn-block lg:hidden"> {$_('common.learnmore')}</button>
 							<ArrowOutwardIcon class="hidden lg:block text-4xl mb-6 hover:rotate-45 transition" />
 						</a>

@@ -54,7 +54,7 @@
 	</div>
 
 	<div class="flex-none flex lg:px-2 lg:mx-2">
-		<div class="flex items-center lg:items-stretch">
+		<div class="flex items-center lg:items-stretch gap-2 rtl:ml-2 ltr:mr-2">
 			{#each Object.values(menuLinks) as item}
 				<!-- Desktop Item  -->
 				<a
@@ -75,11 +75,10 @@
 				{/if}
 			{/each}
 		</div>
+		<!-- Language Changer -->
+		<button class="iconbtn" on:click={toggleLang}>
+			<ArIcon class="ltr:hidden" />
+			<EnIcon class="rtl:hidden" />
+		</button>
 	</div>
-
-	<!-- Language Changer -->
-	<button class="rtl:lg:-mr-4 ltr:lg:-ml-4 iconbtn" on:click={toggleLang}>
-		<ArIcon class="ltr:hidden" />
-		<EnIcon class="rtl:hidden" />
-	</button>
 </nav>

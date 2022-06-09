@@ -6,16 +6,7 @@
 	import { locale, _ } from 'svelte-i18n';
 	import ProjectsPreview from '$lib/components/projects/projects_preview.svelte';
 	import More from '$lib/components/home/more.svelte';
-	import { onMount } from 'svelte';
 	import R from '$lib/consts';
-
-	onMount(async () => {
-		projects = await (
-			await fetch(`/api/projects-${localStorage.getItem('lang') || $locale}.json`)
-		).json();
-	});
-
-	let projects: any;
 </script>
 
 <MetaTags
@@ -34,9 +25,7 @@
 	<!-- {$locale} -->
 	<Hero />
 	<Skills />
-	{#if projects}
-		<ProjectsPreview {projects} slice={4} />
-	{/if}
+	<ProjectsPreview slice={4} />
 	<!-- Testimonials -->
 	<More />
 	<CTA />

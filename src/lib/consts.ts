@@ -1,4 +1,4 @@
-const siteurl = "https://andronasef.ninja"
+export const siteurl = "https://andronasef.ninja"
 const R = {
     Links: {
         contact: "/contact",

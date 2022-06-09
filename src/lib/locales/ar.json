@@ -57,7 +57,10 @@
 			"dis": ""
 		},
 		"projects": {
-			"title": "اخر مشاريعي!",
+			"allmyprojects": {
+				"title": "كل مشاريعي"
+			},
+			"title": "اهم مشاريعي!",
 			"dis": ""
 		},
 		"hiring": {

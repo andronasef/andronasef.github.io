@@ -32,13 +32,11 @@
 		}, 250);
 	});
 	let show: boolean = false;
-	export let refresh: String;
+	export let refresh: string;
 	const pageTransitionDuration = 300;
 </script>
 
 {#if show}
-	<!-- content here -->
-
 	<div dir={$locale == 'en' ? 'ltr' : 'rtl'}>
 		<Header slug={refresh} />
 		<main class="flex-grow flex flex-col justify-start items-center">

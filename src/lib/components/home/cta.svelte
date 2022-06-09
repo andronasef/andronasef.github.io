@@ -1,6 +1,5 @@
 <script lang="ts">
 	import RocketIcon from '~icons/ion/rocket-sharp';
-	// import contact from '$lib/links';
 	import { _, locale } from 'svelte-i18n';
 </script>
 

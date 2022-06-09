@@ -5,14 +5,6 @@
 	import { locale } from 'svelte-i18n';
 	import { onMount } from 'svelte';
 	import R from '$lib/consts';
-
-	onMount(async () => {
-		projects = await (
-			await fetch(`/api/projects-${localStorage.getItem('lang') || $locale}.json`)
-		).json();
-	});
-
-	let projects: any;
 </script>
 
 <MetaTags
@@ -27,8 +19,4 @@
 	}}
 />
 
-{#await projects then projects}
-	{#if projects}
-		<ProjectsPreview {projects} />
-	{/if}
-{/await}
+<ProjectsPreview />
