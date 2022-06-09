@@ -21,7 +21,7 @@
 		</div>
 		<div class="mb-10 grid gap-7 grid-cols-1 lg:grid-cols-2">
 			{#each projects as project, index}
-				{#if index != slice}
+				{#if index > slice}
 					<div class="col-span-1">
 						<Project
 							title={project.meta.title}
