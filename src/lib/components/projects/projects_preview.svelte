@@ -4,7 +4,7 @@
 	import { _, locale } from 'svelte-i18n';
 
 	let projects: any;
-	export let slice: number = -1;
+	export let slice = -1;
 	onMount(async () => {
 		projects = await (
 			await fetch(`/api/projects-${localStorage.getItem('lang') || $locale}.json`)
@@ -21,7 +21,7 @@
 		</div>
 		<div class="mb-10 grid gap-7 grid-cols-1 lg:grid-cols-2">
 			{#each projects as project, index}
-				{#if index > slice}
+				{#if slice == -1 || index <= slice}
 					<div class="col-span-1">
 						<Project
 							title={project.meta.title}
