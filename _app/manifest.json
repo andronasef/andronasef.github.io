@@ -1,11 +1,11 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "start-ba9c4fbc.js",
+    "file": "start-8a566aec.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
-      "_index-9cda7ee2.js",
-      "_index-6b6d02a5.js"
+      "_index-36647174.js",
+      "_index-f4a73a42.js"
     ],
     "dynamicImports": [
       "src/routes/__layout.svelte",
@@ -13,6 +13,7 @@
       "src/routes/contact.svelte",
       "src/routes/index.svelte",
       "src/routes/project.svelte",
+      "src/routes/projects/all.svelte",
       "src/routes/projects/ar/egnews.md",
       "src/routes/projects/ar/iconify-flutter.md",
       "src/routes/projects/ar/mysoundboard-app.md",
@@ -23,232 +24,248 @@
     ]
   },
   "src/routes/__layout.svelte": {
-    "file": "pages/__layout.svelte-31b244e3.js",
+    "file": "pages/__layout.svelte-ebd036c5.js",
     "src": "src/routes/__layout.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-9cda7ee2.js",
-      "_runtime.esm-873126c5.js",
-      "_consts-0763addf.js",
-      "_social_links-0bf2c603.js",
-      "_index-52abafd2.js",
-      "_index-6b6d02a5.js"
+      "_index-36647174.js",
+      "_runtime.esm-982878fe.js",
+      "_consts-d80a0de0.js",
+      "_social_links-f0a16c43.js",
+      "_index-98725664.js",
+      "_index-f4a73a42.js"
     ],
     "css": [
-      "assets/pages/__layout.svelte-c957b927.css"
+      "assets/pages/__layout.svelte-4de4891a.css"
     ]
   },
   ".svelte-kit/runtime/components/error.svelte": {
-    "file": "error.svelte-a50cfc5d.js",
+    "file": "error.svelte-bf088561.js",
     "src": ".svelte-kit/runtime/components/error.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-9cda7ee2.js"
+      "_index-36647174.js"
     ]
   },
   "src/routes/contact.svelte": {
-    "file": "pages/contact.svelte-617d4f47.js",
+    "file": "pages/contact.svelte-17252fad.js",
     "src": "src/routes/contact.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-9cda7ee2.js",
-      "_social_links-0bf2c603.js",
-      "_MetaTags-3b71643e.js",
-      "_runtime.esm-873126c5.js",
-      "_consts-0763addf.js",
-      "_index-6b6d02a5.js"
+      "_index-36647174.js",
+      "_social_links-f0a16c43.js",
+      "_MetaTags-afd525db.js",
+      "_runtime.esm-982878fe.js",
+      "_consts-d80a0de0.js",
+      "_index-f4a73a42.js"
     ]
   },
   "src/routes/index.svelte": {
-    "file": "pages/index.svelte-5b481534.js",
+    "file": "pages/index.svelte-178f9d17.js",
     "src": "src/routes/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-9cda7ee2.js",
-      "_cta-447f7b6f.js",
-      "_consts-0763addf.js",
-      "_runtime.esm-873126c5.js",
-      "_MetaTags-3b71643e.js",
-      "_projects_preview-d9a8cb58.js",
-      "_index-6b6d02a5.js"
+      "_index-36647174.js",
+      "_cta-c28be868.js",
+      "_consts-d80a0de0.js",
+      "_runtime.esm-982878fe.js",
+      "_MetaTags-afd525db.js",
+      "_projects_preview-aa90981a.js",
+      "_index-f4a73a42.js"
     ],
     "css": [
       "assets/pages/index.svelte-fa6bf1ca.css"
     ]
   },
   "src/routes/project.svelte": {
-    "file": "pages/project.svelte-bf6b35ff.js",
+    "file": "pages/project.svelte-af9a0718.js",
     "src": "src/routes/project.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-9cda7ee2.js",
-      "_runtime.esm-873126c5.js",
-      "_index-52abafd2.js",
-      "_MetaTags-3b71643e.js",
-      "_consts-0763addf.js",
-      "_index-6b6d02a5.js"
+      "_index-36647174.js",
+      "_runtime.esm-982878fe.js",
+      "_index-98725664.js",
+      "_MetaTags-afd525db.js",
+      "_consts-d80a0de0.js",
+      "_index-f4a73a42.js"
+    ]
+  },
+  "src/routes/projects/all.svelte": {
+    "file": "pages/projects/all.svelte-ce9af2df.js",
+    "src": "src/routes/projects/all.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-36647174.js",
+      "_cta-c28be868.js",
+      "_runtime.esm-982878fe.js",
+      "_MetaTags-afd525db.js",
+      "_index-f4a73a42.js"
+    ],
+    "css": [
+      "assets/pages/projects/all.svelte-41efb939.css"
     ]
   },
   "src/routes/projects/ar/egnews.md": {
-    "file": "pages/projects/ar/egnews.md-0b4dfc8c.js",
+    "file": "pages/projects/ar/egnews.md-cda407dd.js",
     "src": "src/routes/projects/ar/egnews.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-9cda7ee2.js",
-      "__project-89b6811e.js",
-      "_cta-447f7b6f.js",
-      "_runtime.esm-873126c5.js",
-      "_index-6b6d02a5.js",
-      "_MetaTags-3b71643e.js"
+      "_index-36647174.js",
+      "__project-3dc77e47.js",
+      "_cta-c28be868.js",
+      "_runtime.esm-982878fe.js",
+      "_index-f4a73a42.js",
+      "_MetaTags-afd525db.js"
     ]
   },
   "src/routes/projects/ar/iconify-flutter.md": {
-    "file": "pages/projects/ar/iconify-flutter.md-8976b887.js",
+    "file": "pages/projects/ar/iconify-flutter.md-4b163e11.js",
     "src": "src/routes/projects/ar/iconify-flutter.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-9cda7ee2.js",
-      "__project-89b6811e.js",
-      "_cta-447f7b6f.js",
-      "_runtime.esm-873126c5.js",
-      "_index-6b6d02a5.js",
-      "_MetaTags-3b71643e.js"
+      "_index-36647174.js",
+      "__project-3dc77e47.js",
+      "_cta-c28be868.js",
+      "_runtime.esm-982878fe.js",
+      "_index-f4a73a42.js",
+      "_MetaTags-afd525db.js"
     ]
   },
   "src/routes/projects/ar/mysoundboard-app.md": {
-    "file": "pages/projects/ar/mysoundboard-app.md-5e8e1c63.js",
+    "file": "pages/projects/ar/mysoundboard-app.md-e3fd36a5.js",
     "src": "src/routes/projects/ar/mysoundboard-app.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-9cda7ee2.js",
-      "__project-89b6811e.js",
-      "_cta-447f7b6f.js",
-      "_runtime.esm-873126c5.js",
-      "_index-6b6d02a5.js",
-      "_MetaTags-3b71643e.js"
+      "_index-36647174.js",
+      "__project-3dc77e47.js",
+      "_cta-c28be868.js",
+      "_runtime.esm-982878fe.js",
+      "_index-f4a73a42.js",
+      "_MetaTags-afd525db.js"
     ]
   },
   "src/routes/projects/en/egnews.md": {
-    "file": "pages/projects/en/egnews.md-2da54f4f.js",
+    "file": "pages/projects/en/egnews.md-4ee12887.js",
     "src": "src/routes/projects/en/egnews.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-9cda7ee2.js",
-      "__project-89b6811e.js",
-      "_cta-447f7b6f.js",
-      "_runtime.esm-873126c5.js",
-      "_index-6b6d02a5.js",
-      "_MetaTags-3b71643e.js"
+      "_index-36647174.js",
+      "__project-3dc77e47.js",
+      "_cta-c28be868.js",
+      "_runtime.esm-982878fe.js",
+      "_index-f4a73a42.js",
+      "_MetaTags-afd525db.js"
     ]
   },
   "src/routes/projects/en/iconify-flutter.md": {
-    "file": "pages/projects/en/iconify-flutter.md-86234f9f.js",
+    "file": "pages/projects/en/iconify-flutter.md-3335e81d.js",
     "src": "src/routes/projects/en/iconify-flutter.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-9cda7ee2.js",
-      "__project-89b6811e.js",
-      "_cta-447f7b6f.js",
-      "_runtime.esm-873126c5.js",
-      "_index-6b6d02a5.js",
-      "_MetaTags-3b71643e.js"
+      "_index-36647174.js",
+      "__project-3dc77e47.js",
+      "_cta-c28be868.js",
+      "_runtime.esm-982878fe.js",
+      "_index-f4a73a42.js",
+      "_MetaTags-afd525db.js"
     ]
   },
   "src/routes/projects/en/mysoundboard-app.md": {
-    "file": "pages/projects/en/mysoundboard-app.md-ecb24097.js",
+    "file": "pages/projects/en/mysoundboard-app.md-67cde0ed.js",
     "src": "src/routes/projects/en/mysoundboard-app.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-9cda7ee2.js",
-      "__project-89b6811e.js",
-      "_cta-447f7b6f.js",
-      "_runtime.esm-873126c5.js",
-      "_index-6b6d02a5.js",
-      "_MetaTags-3b71643e.js"
+      "_index-36647174.js",
+      "__project-3dc77e47.js",
+      "_cta-c28be868.js",
+      "_runtime.esm-982878fe.js",
+      "_index-f4a73a42.js",
+      "_MetaTags-afd525db.js"
     ]
   },
   "src/routes/projects/index.svelte": {
-    "file": "pages/projects/index.svelte-e93b9797.js",
+    "file": "pages/projects/index.svelte-2cd87ce2.js",
     "src": "src/routes/projects/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-9cda7ee2.js",
-      "_MetaTags-3b71643e.js",
-      "_runtime.esm-873126c5.js",
-      "_projects_preview-d9a8cb58.js",
-      "_consts-0763addf.js",
-      "_index-6b6d02a5.js"
+      "_index-36647174.js",
+      "_MetaTags-afd525db.js",
+      "_runtime.esm-982878fe.js",
+      "_projects_preview-aa90981a.js",
+      "_consts-d80a0de0.js",
+      "_index-f4a73a42.js"
     ]
   },
-  "_index-9cda7ee2.js": {
-    "file": "chunks/index-9cda7ee2.js"
+  "_index-36647174.js": {
+    "file": "chunks/index-36647174.js"
   },
-  "_index-6b6d02a5.js": {
-    "file": "chunks/index-6b6d02a5.js",
+  "_index-f4a73a42.js": {
+    "file": "chunks/index-f4a73a42.js",
     "imports": [
-      "_index-9cda7ee2.js"
+      "_index-36647174.js"
     ]
   },
-  "_runtime.esm-873126c5.js": {
-    "file": "chunks/runtime.esm-873126c5.js",
+  "_runtime.esm-982878fe.js": {
+    "file": "chunks/runtime.esm-982878fe.js",
     "imports": [
-      "_index-6b6d02a5.js"
+      "_index-f4a73a42.js"
     ]
   },
-  "_social_links-0bf2c603.js": {
-    "file": "chunks/social_links-0bf2c603.js",
+  "_social_links-f0a16c43.js": {
+    "file": "chunks/social_links-f0a16c43.js",
     "imports": [
-      "_index-9cda7ee2.js"
+      "_index-36647174.js"
     ]
   },
-  "_index-52abafd2.js": {
-    "file": "chunks/index-52abafd2.js",
+  "_index-98725664.js": {
+    "file": "chunks/index-98725664.js",
     "imports": [
-      "_index-9cda7ee2.js"
+      "_index-36647174.js"
     ]
   },
-  "_consts-0763addf.js": {
-    "file": "chunks/consts-0763addf.js"
+  "_consts-d80a0de0.js": {
+    "file": "chunks/consts-d80a0de0.js"
   },
-  "_MetaTags-3b71643e.js": {
-    "file": "chunks/MetaTags-3b71643e.js",
+  "_MetaTags-afd525db.js": {
+    "file": "chunks/MetaTags-afd525db.js",
     "imports": [
-      "_index-9cda7ee2.js"
+      "_index-36647174.js"
     ]
   },
-  "_cta-447f7b6f.js": {
-    "file": "chunks/cta-447f7b6f.js",
+  "_cta-c28be868.js": {
+    "file": "chunks/cta-c28be868.js",
     "imports": [
-      "_index-9cda7ee2.js",
-      "_runtime.esm-873126c5.js"
+      "_index-36647174.js",
+      "_runtime.esm-982878fe.js"
     ]
   },
-  "_projects_preview-d9a8cb58.js": {
-    "file": "chunks/projects_preview-d9a8cb58.js",
+  "_projects_preview-aa90981a.js": {
+    "file": "chunks/projects_preview-aa90981a.js",
     "imports": [
-      "_index-9cda7ee2.js",
-      "_runtime.esm-873126c5.js"
+      "_index-36647174.js",
+      "_runtime.esm-982878fe.js"
     ]
   },
-  "__project-89b6811e.js": {
-    "file": "chunks/_project-89b6811e.js",
+  "__project-3dc77e47.js": {
+    "file": "chunks/_project-3dc77e47.js",
     "imports": [
-      "_index-9cda7ee2.js",
-      "_cta-447f7b6f.js",
-      "_runtime.esm-873126c5.js",
-      "_MetaTags-3b71643e.js"
+      "_index-36647174.js",
+      "_cta-c28be868.js",
+      "_runtime.esm-982878fe.js",
+      "_MetaTags-afd525db.js"
     ]
   }
 }
