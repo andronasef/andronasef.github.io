@@ -54,7 +54,7 @@
 	</div>
 
 	<div class="flex-none flex lg:px-2 lg:mx-2">
-		<div class="flex items-center lg:items-stretch gap-2 rtl:ml-2 ltr:mr-2">
+		<div class="flex items-center gap-1 lg:gap-2 lg:rtl:ml-2 lg:ltr:mr-2">
 			{#each Object.values(menuLinks) as item}
 				<!-- Desktop Item  -->
 				<a

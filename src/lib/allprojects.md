@@ -6,7 +6,7 @@
 
 ## Wordpress Design
 
-[5aletEl3yal 👩‍🍼 - Child homecare service in Egypt](http://5aletel3yal.ga/)
+[5aletEl3yal 👩‍🍼 - Child homecare service in Egypt](https://5aletel3yal.ga/)
 
 [WanasCare 🧑‍⚕️ - Eldry Home care service in Egypt](https://wanascare.com)
 
@@ -28,7 +28,7 @@
 
 <style>
     a{
-        @apply text-base
+        @apply text-lg
     }
 	h2 {
 		@apply lg:text-2xl text-xl font-bold mt-5

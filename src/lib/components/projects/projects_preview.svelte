@@ -5,11 +5,14 @@
 
 	let projects: any;
 	export let slice = -1;
-	onMount(async () => {
+
+	onMount(async () => await fetchProjects());
+
+	async function fetchProjects() {
 		projects = await (
 			await fetch(`/api/projects-${localStorage.getItem('lang') || $locale}.json`)
 		).json();
-	});
+	}
 </script>
 
 {#if projects}
