@@ -21,6 +21,10 @@
 	}}
 />
 
+<svelte:head>
+	<link rel="preload" as="image" href="/img/hero.svg" />
+</svelte:head>
+
 <div class="space-y-20">
 	<!-- {$locale} -->
 	<Hero />

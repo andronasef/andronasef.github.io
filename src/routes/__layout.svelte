@@ -22,11 +22,13 @@
 	import SocialLinks from '$lib/components/social_links.svelte';
 	import { fly } from 'svelte/transition';
 	import { onMount } from 'svelte';
-
+	import { getLocaleFromNavigator } from 'svelte-i18n';
 	initTrans();
 
 	onMount(() => {
-		$locale = localStorage.getItem('lang') || 'ar';
+		console.log(getLocaleFromNavigator());
+
+		$locale = localStorage.getItem('lang') || getLocaleFromNavigator()!.split('-')[0];
 		setTimeout(() => {
 			show = true;
 		}, 250);
