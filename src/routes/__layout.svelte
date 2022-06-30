@@ -7,7 +7,7 @@
 	export const load = async ({ url }) => {
 		return {
 			props: {
-				refresh: url.pathname
+				slug: url.pathname
 			}
 		};
 	};
@@ -34,22 +34,22 @@
 		}, 250);
 	});
 	let show: boolean = false;
-	export let refresh: string;
-	const pageTransitionDuration = 300;
+	export let slug: string;
+	const pageTransitionDuration = 250;
 </script>
 
 {#if show}
 	<div dir={$locale == 'en' ? 'ltr' : 'rtl'}>
-		<Header slug={refresh} />
+		<Header {slug} />
 		<main class="flex-grow flex flex-col justify-start items-center">
-			{#if refresh != '/contact'}
+			{#if slug != '/contact'}
 				<SocialLinks floating={true} />
 			{/if}
 
-			{#key refresh}
+			{#key slug}
 				<div
-					class="w-4/5 py-10 lg:py-16"
-					in:fly={{ y: 10, duration: pageTransitionDuration, delay: pageTransitionDuration }}
+					class="w-4/5 my-10 lg:my-16"
+					in:fly={{ y: 10, duration: pageTransitionDuration, delay: pageTransitionDuration + 50 }}
 					out:fly={{ y: -10, duration: pageTransitionDuration }}
 				>
 					<slot />
